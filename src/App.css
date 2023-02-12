@@ -114,6 +114,7 @@
   background: #c8c8c8;
   box-shadow: -4px 12px 25px -10px rgb(0 0 0 / 50%);
   transition: 0.9s all;
+  cursor: not-allowed;
 }
 
 @media (max-width: 500px) {

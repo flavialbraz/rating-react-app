@@ -1,8 +1,8 @@
 <h1 align="center">
- Avalição - REACT 
+ Avalição - REACT com Typescript
 </h1>
 
-> Online:
+> Online: https://rating-react-app.vercel.app/
 
 # 📁 O projeto
 
