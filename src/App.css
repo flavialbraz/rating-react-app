@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Work+Sans:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rating-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-page {
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+  max-width: 70%;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.rating-page {
+  height: calc(100vh - 20vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.star-btn,
+.selected-star {
+  cursor: pointer;
+  width: 33px;
+  height: 32px;
+  border: unset;
+  font-size: 0;
+  transition: 0.4s all;
+}
+
+.star-btn {
+  background: url("/src/assets/images/estrela_vazia.svg") top center no-repeat;
+}
+
+.selected-star {
+  background: url("/src/assets/images/estrela_cheia.svg") top center no-repeat;
+}
+
+.buttons-rating-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttons-container button {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  padding: 0.5rem 1.54rem;
+  cursor: pointer;
+  border: unset;
+  text-transform: uppercase;
+  transition: 0.9s all;
+  border-radius: 100px;
+}
+
+.skip-btn {
+  color: #2cc6d0;
+  background: unset;
+}
+
+.confirm-btn {
+  color: #fff;
+  background: #2cc6d0;
+  box-shadow: -4px 12px 25px -10px #2eafb9;
+}
+
+.confirm-btn:hover {
+  background: #21a9b2;
+  transition: 0.4s all;
+}
+
+.skip-btn:hover {
+  color: #21a9b2;
+  transition: 0.4s all;
+}
+
+.confirm-btn[disabled] {
+  background: #c8c8c8;
+  box-shadow: -4px 12px 25px -10px rgb(0 0 0 / 50%);
+  transition: 0.9s all;
+}
+
+@media (max-width: 500px) {
+  .title-page {
+    width: 100%;
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+  }
+
+  .rating-page {
+    height: calc(100vh - 20vh);
+  }
+}
