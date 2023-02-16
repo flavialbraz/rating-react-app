@@ -2,31 +2,29 @@ import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Rating } from "./components/Rating";
+import { Button } from "./components/Button";
 
 function App() {
-  
-  const [isDisabled, setIsDisabled] = useState(true);
+  const [isDisabled, setIsDisabled] = useState(true)
 
   function handleStarClick(star: number) {
-    setIsDisabled(false);
+    setIsDisabled(false)
   }
 
   return (
-    <div className="container">
+ 
       <div className="rating-page">
+
         <Header />
-        <Rating onStarClick={handleStarClick} />
+        <Rating 
+          onStarClick={handleStarClick} 
+          isDisabled={isDisabled} 
+        />
+
+        
       </div>
 
-      <div className="buttons-container">
-        <button className="skip-btn"> Pular </button>
-
-        <button className="confirm-btn" 
-        disabled={isDisabled}>
-          Confirmar
-        </button>
-      </div>
-    </div>
+       
   );
 }
 

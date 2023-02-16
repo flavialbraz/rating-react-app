@@ -42,13 +42,21 @@
 }
 
 .rating-page {
-  height: calc(100vh - 20vh);
+  height: calc(90vh);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 4rem;
 }
+
+.content-star {
+  display: flex;
+  justify-content: space-evenly;
+  height: 24vh;
+}
+
 
 .star-btn,
 .selected-star {
@@ -124,7 +132,4 @@
     line-height: 2.125rem;
   }
 
-  .rating-page {
-    height: calc(100vh - 20vh);
-  }
 }
