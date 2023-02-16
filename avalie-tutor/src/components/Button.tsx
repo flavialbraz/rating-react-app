@@ -5,7 +5,7 @@ interface ButtonProps {
   className?: string,
   children: string,
   isDisabled?: boolean,
-
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export function Button({ children, className, isDisabled }: ButtonProps) {

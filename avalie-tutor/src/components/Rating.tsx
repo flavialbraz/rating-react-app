@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { Button } from "./Button";
+import axios from "axios"
+import Swal from 'sweetalert2'
+import 'sweetalert2/dist/sweetalert2.min.css'
+
 
 interface RatingProps {
   onStarClick: (star: number) => void,
@@ -53,8 +57,22 @@ export function Rating(props: RatingProps) {
 
   function handleSubmit(ev: React.FormEvent<HTMLFormElement>) {
       ev.preventDefault()
-      console.log(`Tutoria avaliada em: ${selectedStar} ${selectedStar === 1 ? 'estrela' : 'estrelas'}`)
-  }
+      console.log(`MSG DO FRONT: Tutoria avaliada em: ${selectedStar} ${selectedStar === 1 ? 'estrela' : 'estrelas'}`)
+ 
+      axios.post("http://localhost:8000/rating", { stars: selectedStar })
+      .then((response) => {
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+
+      Swal.fire({
+        title: 'Obrigada pela sua avaliação!',
+        text: 'É muito importante para nós receber o seu feedback!',
+        icon: 'success',
+        confirmButtonText: 'Fechar'
+      })}
 
   return (
     <div className="stars-container">
