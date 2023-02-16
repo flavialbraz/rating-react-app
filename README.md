@@ -1,6 +1,8 @@
 <h1 align="center">
- Avalição - REACT com Typescript
+🌟 Avaliação - React com Typescript
 </h1>
+ 
+<img src="https://user-images.githubusercontent.com/78583429/218342687-055f9db0-84d0-41cc-9d5a-ec89c4f8e236.png"/>
 
 > Online: https://rating-react-app.vercel.app/
 
@@ -13,9 +15,9 @@ A ideia da aplicação é ser uma página de avalição simples.
 
 ## Passos a passo da lógica
 
-- Array criado utilizando o usestate. Cada estrela tem um número e um bolenao (verdadeiro ou falso), dizendo que ela foi selecionada ou não
-- Quando o usuário clica em uma estrela, a função handleSelected é chamada.
-- Dentro da função handleSelected, pegamos a lista de estrelas atual e a armazenamos na variável prevStarItem.
+- Array criado utilizando o usestate. Cada estrela tem um número e um boolean (verdadeiro ou falso), iniciando com false.
+- Quando o usuário clica em uma estrela a função handleSelected é chamada.
+- Dentro da função handleSelected, pegamos a lista de estrelas/notas atual e a armazenamos na variável prevStarItem.
 - Depois é utilizado o método map para percorrer cada estrela da lista e verificar se o número da estrela é igual ao número da estrela clicada. Se o número da estrela clicada for igual ao número de uma das estrelas da lista, a selecionada é alterada de false (estado inicial) para true.
 - Após isso, setStarItem é usado para atualizar o array de acordo com a ação do usuário e componente é renderizado novamente mostrando as estrelas com a informação de selecionado correta.
 
