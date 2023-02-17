@@ -29,7 +29,7 @@ Clone o respositório com:
 git clone https://github.com/flavialbraz/rating-react-app.git
 ```
 
-Para a aplicação funcionar utilize o comando abaixo para instalar as dependencias
+Para a aplicação funcionar entre na pasta avalie-tutor e utilize o comando abaixo para instalar as dependencias
 
 ```
 npm install
@@ -40,6 +40,18 @@ Após isso rode a aplicação com o comando:
 ```
 npm run dev
 ```
+
+Para rodar o servidor entre na pasta server e instale as dependecias com: 
+
+```
+npm install 
+```
+
+Após isso rode o servidor com o seguinte comando:
+```
+nodemon server.js
+```
+Após isso a aplicação deve funcionar normalmente na em: http://127.0.0.1:5173/
 
 # 👩‍💻 Dev
 
