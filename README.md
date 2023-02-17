@@ -51,7 +51,7 @@ Após isso rode o servidor com o seguinte comando:
 ```
 nodemon server.js
 ```
-Após isso a aplicação deve funcionar normalmente na em: http://127.0.0.1:5173/
+A aplicação deve funcionar normalmente na em: http://127.0.0.1:5173/
 
 # 👩‍💻 Dev
 
